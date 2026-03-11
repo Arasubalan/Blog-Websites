@@ -3,10 +3,10 @@ from django.utils.text import slugify
 
 
 class categary(models.Model):
-    name=models.CharField(max_length=100)
+    names=models.CharField(max_length=100)
     
     def __str__(self):
-        return self.name 
+        return self.names 
 
 class post(models.Model):
     title=models.CharField(max_length=200)
